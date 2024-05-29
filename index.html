@@ -1,1 +1,6 @@
-<input onkeyup="if(event.key=='Enter'){eval(this.value)}">
+<label>Eval:</label>
+<input onkeyup="if(event.key=='Enter'){document.getElementById('res').innerHTML=eval(this.value)}">
+<p id="res"></p>
+<br>
+<label>Page:</label>
+<input onkeyup="if(event.key=='Enter'){location.href=this.value}">
