@@ -3,4 +3,4 @@
 <p id="res"></p>
 <br>
 <label>Page:</label>
-<input onkeyup="if(event.key=='Enter'){location.href=this.value}">
+<input onkeyup="if(event.key=='Enter'){location.href=(this.value.includes('://') ? '' : 'https://')+this.value}">
